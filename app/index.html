@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="tweetsApp" ng-strict-di>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tweets App</title>
+    <link rel="shortcut icon" href="https://mobile.twitter.com/favicon.ico">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/main.css"/>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+    <mainheader></mainheader>
+    <div ng-view="" class="main-container">
+        <div class="panel-left">
+            <user></user>
+            <trends></trends>
+            <ul class="">
+                <li class=""><a href="#" >{{trend.name}}</a></li>
+                <li class=""><a href="#" >{{trend.name}}</a></li>
+
+            </ul>
+            <section class="panel footer-links">
+                <a class="">@ 2017 Twitter</a>
+                <a class=""> About</a>
+                <a class=""> Help</a>
+                <a class=""> Terms</a>
+                <a class=""> Privacy</a>
+                <a class=""> Cookies</a>
+                <a class=""> Ads Info</a>
+                <a class=""> Brand</a>
+                <a class=""> Blog</a>
+                <a class=""> Status</a>
+                <a class=""> Apps</a>
+                <a class=""> Jobs</a>
+                <a class=""> Advertise</a>
+                <a class=""> Media</a>
+                <a class=""> Developers</a>
+            </section>
+        </div>
+        <div class="panel-right">
+            <tweets></tweets>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="components/header/header-directive.js"></script>
+    <script src="components/tweets/tweets-directive.js"> </script>
+    <script src="components/tweets/tweets-controller.js"> </script>
+    <script src="components/user/user-directive.js"> </script>
+    <script src="components/user/user-controller.js"> </script>
+    <script src="components/trends/trends-directive.js"> </script>
+    <script src="components/trends/trends-controller.js"> </script>
+</body>
+</html>

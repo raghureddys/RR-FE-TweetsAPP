@@ -1,0 +1,31 @@
+{
+  "name": "tweets-app",
+  "description": "Technical Assessment - Tweets App",
+  "main": "index.js",
+  "authors": [
+    "Raghu Reddy <sanikommu@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.5",
+    "angular-route": "1.4.5",
+    "angular-animate": "1.4.5",
+    "angular-sanitize": "1.4.5",
+    "angular-resource": "1.4.5",
+    "angular-cookies": "1.4.5",
+    "angular-i18n": "1.4.5",
+    "angular-translate": "~2.2.0",
+    "fontawesome": "~4.7.0"
+  },
+  "devDependencies": {}
+}

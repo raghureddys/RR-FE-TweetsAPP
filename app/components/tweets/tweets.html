@@ -1,0 +1,30 @@
+<section class="panel">
+    <div class="tweets-header">
+        <h3>Tweets</h3>
+        <select>
+            <option value="user1" ng-click="getTweets('user1')">User 1</option>
+            <option value="user2" ng-click="getTweets('user2')">User 2</option>
+        </select>
+    </div>
+    <div class="tweets" ng-repeat="tweet in tweets">
+        <div  class="avatar"><img ng-src="{{tweet.img}}" height="70" width="70"></div>
+        <div class="tweet-content">
+            <div class="tweet-header">
+                <strong class="">{{tweet.name}}</strong>
+                <span>@{{tweet.screen_name}}</span>
+                <span class="pull-right">{{tweet.time}}</span>
+            </div>
+            <p class="tweet-text">
+                {{tweet.text}}
+            </p>
+            <div class="tweets-actions">
+                <i class="twitter-action-icon fa fa-reply" aria-hidden="true"></i>
+                <i class="twitter-action-icon fa fa-retweet" aria-hidden="true"></i>
+                <i class="twitter-action-icon fa fa-star" aria-hidden="true"></i>
+                <i class="twitter-action-icon fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+

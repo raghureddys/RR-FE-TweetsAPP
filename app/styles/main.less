@@ -1,0 +1,71 @@
+@import "../components/header/header.less";
+@import "../components/trends/trends.less";
+@import "../components/user/user.less";
+@import "../components/tweets/tweets.less";
+@import "../styles/variables.less";
+
+
+html {
+  color: #292f33;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  direction: ltr;
+  background-color: #f5f5f5;
+}
+
+.main-container {
+  width: 100%;
+  margin-top: 46px;
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+a {
+  color: #00b3ee;
+}
+ul, li {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.pull-right {
+  float: right;
+  text-align: left;
+}
+
+.pull-left {
+  float: left;
+}
+.panel {
+  margin-bottom: @panel-margin;
+  background-color: @panel-bg;
+  border: 1px solid transparent;
+  border-radius: @panel-border-radius;
+  border: 1px solid lightgray;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  padding: 10px;
+}
+.panel-header {
+  display: block;
+}
+.panel-left {
+  float: left;
+  width: 20%;
+  margin-top: 20px;
+}
+
+.panel-right {
+  float: left;
+  padding-left: 20px;
+  width: 40%;
+  margin-top: 20px;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.footer-links a{
+  color: lightgrey;
+}

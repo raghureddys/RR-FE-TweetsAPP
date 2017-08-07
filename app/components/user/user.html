@@ -1,0 +1,27 @@
+<section class="panel">
+    <div class="profile-img">
+        <img ng-src="{{user.profile_background_image_url}}" height="150" width="100%">
+    </div>
+     <table class="profile-stats">
+        <tr>
+            <th>TWEETS</th>
+            <th>FOLLOWING</th>
+            <th>FOLLOWERS</th>
+        </tr>
+        <tr>
+            <td>{{user.listed_count}}</td>
+            <td>{{user.friends_count}}</td>
+            <td>{{user.followers_count}}</td>
+        </tr>
+    </table>
+    <div class="compose-tweet">
+        <!--<form class="compose-form">
+            <textarea id="subject" name="subject" placeholder="Compose new Tweet..." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+        </form>-->
+
+        <form class="compose-form" ng-submit="saveTweet()">
+            <input class="input-compose" type="text" placeholder="Compose new Tweet..." ng-model="text" name="text" />
+        </form>
+    </div>
+</section>

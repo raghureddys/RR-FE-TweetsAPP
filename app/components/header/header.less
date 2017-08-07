@@ -1,0 +1,106 @@
+
+@nav-bg-color: #55acee;
+@text-color: #000000;
+@nav-hover-color: #ffffff;
+@nav-color: #F8F8FF;
+
+
+.header-container {
+  background-color: @nav-bg-color;
+  height: 46px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: inline-block;
+  .nav-bar {
+    list-style: none;
+    li {
+      display: inline;
+      padding: 0 10px;
+      color: @nav-color;
+      a {
+        text-decoration: none;
+        color: @nav-color;
+        &:hover {
+          color: @nav-hover-color;
+        }
+      }
+      &:hover {
+        color: @nav-hover-color;
+      }
+    }
+  }
+}
+.nav-right {
+  display: inline-block;
+  .nav-bar {
+    list-style: none;
+    li {
+      display: inline;
+      padding: 0 10px;
+      color: @nav-color;
+      a {
+        text-decoration: none;
+        color: @nav-color;
+        &:hover {
+          color: @nav-hover-color;
+        }
+      }
+      &:hover {
+        color: @nav-hover-color;
+      }
+    }
+  }
+}
+.nav-right .search-form {
+  float: left;
+  height: 33px;
+  margin: 7px 15px 0 0;
+  font-size: 12px;
+  width: 221px;
+}
+.nav-right .search {
+  background-color: #4682b4;
+  border-radius: 21px;
+  border: 1px solid transparent;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 12px;
+  height: 32px;
+  line-height: 16px;
+  padding: 8px 32px 8px 12px;
+  transition: all .2s ease-in-out;
+  width: 100%;
+}
+
+.nav-right .search-icon {
+  position: relative;
+  z-index: 1;
+  left: 90%;
+  top: -25px;
+  color: white;
+  cursor: pointer;
+  width: 0;
+}
+.nav-right .nav {
+  float: right;
+}
+
+.twitter-icon {
+  position: relative;
+  left: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-2x {
+  font-size: 1.3em;
+}
